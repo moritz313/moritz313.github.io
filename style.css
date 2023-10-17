@@ -47,10 +47,10 @@ html, body {
 
 #links {
     position: absolute;
-    top: 55%; /* Adjust the top position as needed */
+    top: 54%;
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    text-align: center; /* Center text inside the links container */
+    transform: translateX(-50%); 
+    text-align: center; 
 }
 
 #links a {
@@ -59,6 +59,6 @@ html, body {
     color: white;
     margin: 0 10px;
     font-size: 18px;
-    display: inline-block; /* Display links in a horizontal line */
+    display: inline-block; 
     font-family: 'Helvetica Neue', sans-serif;
 }
