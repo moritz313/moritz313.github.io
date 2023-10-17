@@ -21,7 +21,6 @@ html, body {
     0% { background-position: 0% 0%; }
     50% { background-position: 100% 33%; }
     100% { background-position: 0% 0%; }
-    
 }
 
 #gradient2 {
@@ -39,9 +38,27 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 8vw;
+    font-size: 50px;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
     margin: 0rem;
-    color: white; 
+    color: white;
+}
+
+#links {
+    position: absolute;
+    top: 55%; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    text-align: center; /* Center text inside the links container */
+}
+
+#links a {
+    
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    display: inline-block; /* Display links in a horizontal line */
+    font-family: 'Helvetica Neue', sans-serif;
 }
