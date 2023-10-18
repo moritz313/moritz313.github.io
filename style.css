@@ -24,6 +24,19 @@ html, body {
     100% { background-position: 0% 0%; }
 }
 
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 #gradient2 {
     position: absolute;
     top: 0;
@@ -44,6 +57,7 @@ html, body {
     font-weight: bold;
     margin: 0rem;
     color: white;
+    animation: fadeIn 3s forwards;
 }
 
 #links {
@@ -51,7 +65,8 @@ html, body {
     top: 54%;
     left: 50%;
     transform: translateX(-50%); 
-    text-align: center; 
+    text-align: center;
+    animation: fadeIn 3s forwards; 
 }
 
 #links a {
@@ -63,3 +78,5 @@ html, body {
     display: inline-block; 
     font-family: 'Helvetica Neue', sans-serif;
 }
+
+
