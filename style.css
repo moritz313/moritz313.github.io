@@ -4,6 +4,13 @@ html, body {
     padding: 0;
     overflow: hidden;
     min-height: -webkit-fill-available;
+    scroll-behavior: smooth;
+}
+
+#container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 #gradient1 {
@@ -23,7 +30,6 @@ html, body {
     50% { background-position: 100% 33%; }
     100% { background-position: 0% 0%; }
 }
-
 
 @keyframes fadeIn {
     0% {
@@ -53,30 +59,119 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: bold;
     margin: 0rem;
     color: white;
     animation: fadeIn 3s forwards;
 }
 
+#button1 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    animation: fadeIn 3s forwards;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #fff;
+    background-color: #8484847d;
+    padding: 10px 30px;
+    border: solid #8484847d 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 15px;
+    transition : 1000ms;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    
+    #button1:hover{
+    
+    transition : 1000ms;
+    padding: 10px 50px;
+    background-color: #ffffffb8;
+    color: #5e5e5e;
+    border: solid 2px #b0b0b0;
+    }
+
 #links {
     position: absolute;
     top: 54%;
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
     text-align: center;
-    animation: fadeIn 3s forwards; 
+    animation: fadeIn 3s forwards;
 }
 
 #links a {
-    
     text-decoration: none;
     color: white;
     margin: 0 10px;
     font-size: 18px;
-    display: inline-block; 
-    font-family: 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    font-family: "Rubik", sans-serif;
 }
 
+#additional-content {
+    background-color: #2a2a2a;
+    padding: 20px;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0;
+}
 
+#nav {
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+    overflow: hidden;
+    
+  }
+  
+  #nav-links {  
+    display: flex;
+    gap: clamp(1rem, 2vw, 2rem);
+    margin-top: clamp(2rem, 2vw, 3rem);
+    padding: 0rem clamp(1rem, 2vw, 2rem);
+    transition: transform 500ms cubic-bezier(.13,.53,.38,.97); 
+  }
+
+  #nav-links > .nav-link {
+    text-decoration: none;
+  }
+  
+  #nav-links > .nav-link > .nav-link-label {
+    color: white;
+    font-size: 1.25rem;
+    margin: 0rem;
+    text-transform: uppercase;
+  }
+  
+  #nav-links > .nav-link > .nav-link-image {
+    width: max(20vw, 400px);
+    aspect-ratio: 1.8 / 1;
+    border-radius: 0.5rem;
+    margin-top: 0.75rem;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+  }
+
+  #nav-links > .nav-link > .nav-link-image:hover {
+    margin-top: 0.55rem;
+    filter: grayscale(0%);
+  }
+
+body {
+    overflow-y: scroll;
+}
