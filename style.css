@@ -183,7 +183,7 @@ html, body {
   
   @media (max-width: 768px) {
     #nav-links > .nav-link > .nav-link-label {
-        font-size: 0.625rem;
+        font-size: 0.833rem;
         
     }
 
