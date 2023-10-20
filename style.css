@@ -10,6 +10,7 @@ html, body {
 #container {
     position: relative;
     min-height: 100vh;
+    max-height: 100%;
     overflow: hidden;
 }
 
@@ -78,7 +79,7 @@ html, body {
     font-weight: 400;
     font-size: 17px;
     color: #fff;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    background: linear-gradient(43deg, #4159d011 0%, #c850c006 46%, #ffcd7017 100%); 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 10px 30px;
@@ -91,18 +92,20 @@ html, body {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+    animation: Scroll 6s linear infinite;
 }
 
     
-    #button1:hover{
-    
+    #button1:hover{    
     transition : 1000ms;
     padding: 10px 50px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.386), rgba(255, 255, 255, 0));
-    box-shadow: 0 8px 32px 0 rgba(95, 95, 95, 0.37);
-    color: #b0b0b0;
-    border: solid 2px #b0b0b0;
+    background: linear-gradient(43deg, #4159d043 0%, #c850c03c 46%, #ffcd704d 100%); 
+    border: solid 2px #fffbfbab;
+  
     }
+
+
+    
 
 #links {
     position: absolute;
