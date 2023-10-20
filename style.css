@@ -131,7 +131,6 @@ html, body {
 #nav {
     height: 50vh;
     width: 100%;
-    position: absolute;
     left: 0px;
     bottom: 0px;
     z-index: 1;
@@ -145,7 +144,6 @@ html, body {
     gap: clamp(1rem, 2vw, 2rem);
     margin-top: clamp(2rem, 2vw, 3rem);
     padding: 0rem clamp(1rem, 2vw, 2rem);
-    transition: transform 500ms cubic-bezier(.13,.53,.38,.97); 
   }
 
   #nav-links > .nav-link {
@@ -176,17 +174,26 @@ html, body {
     filter: grayscale(0%);
   }
 
+  
   @media (max-width: 768px) {
+    #nav-links > .nav-link > .nav-link-label {
+        font-size: 0.625rem;
+        
+    }
+
     #nav-links > .nav-link > .nav-link-image {
-        aspect-ratio: 1.4/1;
-        width: 80%;
+        width: max(10vw, 100px);
+        border-radius: 0.25rem;
+        margin-top: 0.375rem;
         
     }
     #nav-links > .nav-link {
-        width: calc(50% - 1rem);
-      }
+       width: 50%;
+    }
     
   }
+  
+ 
   
 
 body {
