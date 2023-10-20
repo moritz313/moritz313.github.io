@@ -78,10 +78,12 @@ html, body {
     font-weight: 400;
     font-size: 17px;
     color: #fff;
-    background-color: #8484847d;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 10px 30px;
-    border: solid #8484847d 2px;
-    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border-radius: 15px;
     transition : 1000ms;
     display: flex;
@@ -96,8 +98,9 @@ html, body {
     
     transition : 1000ms;
     padding: 10px 50px;
-    background-color: #ffffffb8;
-    color: #5e5e5e;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.386), rgba(255, 255, 255, 0));
+    box-shadow: 0 8px 32px 0 rgba(95, 95, 95, 0.37);
+    color: #b0b0b0;
     border: solid 2px #b0b0b0;
     }
 
